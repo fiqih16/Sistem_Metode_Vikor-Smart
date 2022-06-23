@@ -93,7 +93,7 @@ require_once('../template/header_v.php');
             <div class="row">
                 <div class="form-group col-md-12">
                     <label class="font-weight-bold">Nama</label>
-                    <input autocomplete="off" type="text" name="nama" required value="<?php echo $d['nama']; ?>"
+                    <input autocomplete="off" type="text" name="nama" required value="<?php echo $d['nama_v']; ?>"
                         class="form-control" />
                 </div>
             </div>

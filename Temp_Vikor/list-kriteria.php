@@ -65,10 +65,10 @@ endif;
                         <td>
                             <div class="btn-group" role="group">
                                 <a data-toggle="tooltip" data-placement="bottom" title="Edit Data"
-                                    href="edit-kriteria.php?id=<?php echo $data['id_kriteria']; ?>"
+                                    href="edit-kriteria.php?id=<?php echo $data['id_kriteria_v']; ?>"
                                     class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></a>
                                 <a data-toggle="tooltip" data-placement="bottom" title="Hapus Data"
-                                    href="hapus-kriteria.php?id=<?php echo $data['id_kriteria']; ?>"
+                                    href="hapus-kriteria.php?id=<?php echo $data['id_kriteria_v']; ?>"
                                     onclick="return confirm ('Apakah anda yakin untuk meghapus data ini')"
                                     class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                             </div>

@@ -5,7 +5,7 @@
 $errors = array();
 $sukses = false;
 
-$nama = (isset($_POST['nama_v'])) ? trim($_POST['nama_v']) : '';
+$nama = (isset($_POST['nama'])) ? trim($_POST['nama']) : '';
 
 if(isset($_POST['submit'])):	
 	

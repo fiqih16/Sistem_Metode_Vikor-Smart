@@ -26,7 +26,7 @@ if(isset($_POST['submit'])):
 				$_SESSION["user_id"] = $data["id_user"];
 				$_SESSION["username"] = $data["username"];
 				$_SESSION["role"] = $data["role"];
-				redirect_to("dashboard.php");
+				redirect_to("../Home/home.php");
 			} else {
 				$errors[] = 'Username atau password salah!';
 			}

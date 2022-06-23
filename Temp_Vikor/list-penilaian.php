@@ -6,9 +6,9 @@ $page = "Penilaian";
 require_once('../template/header_v.php');
 
 if(isset($_POST['tambah'])):	
-	$id_alternatif = $_POST['id_alternatif_v'];
-	$id_kriteria = $_POST['id_kriteria_v'];
-	$nilai = $_POST['nilai_v'];
+	$id_alternatif = $_POST['id_alternatif'];
+	$id_kriteria = $_POST['id_kriteria'];
+	$nilai = $_POST['nilai'];
 
 	if(!$id_kriteria) {
 		$errors[] = 'ID kriteria tidak boleh kosong';
@@ -35,9 +35,9 @@ if(isset($_POST['tambah'])):
 endif;
 
 if(isset($_POST['edit'])):	
-	$id_alternatif = $_POST['id_alternatif_v'];
-	$id_kriteria = $_POST['id_kriteria_v'];
-	$nilai = $_POST['nilai_v'];
+	$id_alternatif = $_POST['id_alternatif'];
+	$id_kriteria = $_POST['id_kriteria'];
+	$nilai = $_POST['nilai'];
 
 	if(!$id_kriteria) {
 		$errors[] = 'ID kriteria tidak boleh kosong';

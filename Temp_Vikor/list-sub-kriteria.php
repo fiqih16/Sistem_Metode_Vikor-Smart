@@ -5,9 +5,9 @@ $page = "Sub Kriteria";
 require_once('../template/header_v.php');
 
 if(isset($_POST['tambah'])):	
-	$id_kriteria = $_POST['id_kriteria_v'];
-	$nama = $_POST['nama_v'];
-	$nilai = $_POST['nilai_v'];
+	$id_kriteria = $_POST['id_kriteria'];
+	$nama = $_POST['nama'];
+	$nilai = $_POST['nilai'];
 
 	if(!$id_kriteria) {
 		$errors[] = 'ID kriteria tidak boleh kosong';
@@ -33,10 +33,10 @@ if(isset($_POST['tambah'])):
 endif;
 
 if(isset($_POST['edit'])):	
-	$id_sub_kriteria = $_POST['id_sub_kriteria_v'];
-	$id_kriteria = $_POST['id_kriteria_v'];
-	$nama = $_POST['nama_v'];
-	$nilai = $_POST['nilai_v'];
+	$id_sub_kriteria = $_POST['id_sub_kriteria'];
+	$id_kriteria = $_POST['id_kriteria'];
+	$nama = $_POST['nama'];
+	$nilai = $_POST['nilai'];
 
 	if(!$id_kriteria) {
 		$errors[] = 'ID kriteria tidak boleh kosong';
@@ -51,7 +51,7 @@ if(isset($_POST['edit'])):
 	}	
 	
 	if(empty($errors)):
-		$update = mysqli_query($koneksi,"UPDATE sub_kriteria_v SET nama_v = '$nama', nilai = '$nilai' WHERE id_kriteria_v = '$id_kriteria' AND id_sub_kriteria_v = '$id_sub_kriteria'");
+		$update = mysqli_query($koneksi,"UPDATE sub_kriteria_v SET nama_v = '$nama', nilai_v = '$nilai' WHERE id_kriteria_v = '$id_kriteria' AND id_sub_kriteria_v = '$id_sub_kriteria'");
 		
 		if($update) {
 			$sts[] = 'Data berhasil diupdate';

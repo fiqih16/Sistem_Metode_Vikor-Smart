@@ -6,10 +6,10 @@ $errors = array();
 $sukses = false;
 
 if(isset($_POST['submit'])):	
-	$kode_kriteria = $_POST['kode_kriteria_v'];
-	$nama = $_POST['nama_v'];
-	$bobot = $_POST['bobot_v'];
-	$ada_pilihan = $_POST['ada_pilihan_v'];
+	$kode_kriteria = $_POST['kode_kriteria'];
+	$nama = $_POST['nama'];
+	$bobot = $_POST['bobot'];
+	$ada_pilihan = $_POST['ada_pilihan'];
 
 	if(!$kode_kriteria) {
 		$errors[] = 'Kode kriteria tidak boleh kosong';
